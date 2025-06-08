@@ -1,0 +1,107 @@
+Here are 5 SQL query questions that can be solved using multiple approaches (using JOIN, SUBQUERY, CTE, WINDOW FUNCTION, EXISTS, etc.). These are great for practicing different SQL techniques.
+
+
+---
+
+1. Find employees with the highest salary in each department
+
+❓Question:
+
+> Given a table employees(emp_id, name, salary, dept_id), find the employee(s) with the highest salary in each department.
+
+
+
+🧠 Approaches:
+
+Using JOIN (Self-join)
+
+Using CTE with RANK()/DENSE_RANK()
+
+Using Subquery with MAX(salary)
+
+
+
+---
+
+2. Find duplicate rows in a table
+
+❓Question:
+
+> In a table students(id, name, class), find all records that have duplicate names and class combinations.
+
+
+
+🧠 Approaches:
+
+Using GROUP BY with HAVING count > 1
+
+Using WINDOW function ROW_NUMBER() > 1
+
+Using EXISTS or IN with correlated subquery
+
+
+
+---
+
+3. Delete duplicate rows while keeping one
+
+❓Question:
+
+> Given a table orders(order_id, customer_id, order_date), delete duplicate records based on customer_id and order_date, but keep the one with the lowest order_id.
+
+
+
+🧠 Approaches:
+
+Using CTE with ROW_NUMBER()
+
+Using NOT IN / NOT EXISTS
+
+Using TEMP table and DISTINCT insert
+
+
+
+---
+
+4. Get second highest salary
+
+❓Question:
+
+> From employees(emp_id, name, salary), find the second highest salary.
+
+
+
+🧠 Approaches:
+
+Using Subquery with LIMIT/OFFSET
+
+Using CTE with DENSE_RANK()
+
+Using MAX() with WHERE salary < (SELECT MAX(salary)...)
+
+
+
+---
+
+5. Retrieve departments with more than 3 employees
+
+❓Question:
+
+> Given employees(emp_id, name, dept_id), return the departments that have more than 3 employees.
+
+
+
+🧠 Approaches:
+
+Using GROUP BY with HAVING
+
+Using Subquery with COUNT
+
+Using WINDOW Function COUNT() OVER(PARTITION BY dept_id) and filtering
+
+
+
+---
+
+Would you like full SQL query examples for each approach?
+
