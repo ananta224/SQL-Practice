@@ -105,3 +105,83 @@ Using WINDOW Function COUNT() OVER(PARTITION BY dept_id) and filtering
 
 Would you like full SQL query examples for each approach?
 
+Sure! Below are the CREATE TABLE and INSERT INTO statements in SQL for the 5 problems mentioned earlier. You can use this data to practice writing queries using multiple approaches.
+
+
+---
+
+✅ 1. employees Table
+
+CREATE TABLE employees (
+    emp_id INT,
+    name VARCHAR(50),
+    salary INT,
+    dept_id INT
+);
+
+INSERT INTO employees VALUES
+(1, 'Alice', 80000, 101),
+(2, 'Bob', 95000, 101),
+(3, 'Charlie', 60000, 102),
+(4, 'David', 95000, 101),
+(5, 'Eva', 70000, 102),
+(6, 'Frank', 85000, 103),
+(7, 'Grace', 85000, 103);
+
+
+---
+
+✅ 2. students Table
+
+CREATE TABLE students (
+    id INT,
+    name VARCHAR(50),
+    class VARCHAR(20)
+);
+
+INSERT INTO students VALUES
+(1, 'Ravi', '10A'),
+(2, 'Ravi', '10A'),
+(3, 'Meena', '10B'),
+(4, 'John', '10A'),
+(5, 'Ravi', '10B'),
+(6, 'Meena', '10B');
+
+
+---
+
+✅ 3. orders Table
+
+CREATE TABLE orders (
+    order_id INT,
+    customer_id INT,
+    order_date DATE
+);
+
+INSERT INTO orders VALUES
+(1, 101, '2024-06-01'),
+(2, 102, '2024-06-02'),
+(3, 101, '2024-06-01'),
+(4, 103, '2024-06-03'),
+(5, 102, '2024-06-02'),
+(6, 101, '2024-06-04');
+
+
+---
+
+✅ 4. Reusing employees Table for Salary Question
+
+Already created above. You can use it for second-highest salary queries.
+
+
+---
+
+✅ 5. Reusing employees Table for Department Employee Count
+
+Same employees table will be reused to find departments with more than 3 employees.
+
+
+---
+
+Would you like me to provide full solution queries using different methods for each of the 5 problems too?
+
